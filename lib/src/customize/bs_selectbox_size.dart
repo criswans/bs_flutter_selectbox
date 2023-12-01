@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class BsSelectBoxSize {
   const BsSelectBoxSize({
     this.maxHeight = 300.0,
-    this.fontSize = 14.0,
+    this.fontSize = 20.0,
     this.optionFontSize = 14.0,
     this.searchInputFontSize = 14.0,
     this.labelX = 15.0,
