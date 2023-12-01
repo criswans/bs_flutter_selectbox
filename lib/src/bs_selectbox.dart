@@ -436,7 +436,7 @@ class _BsSelectBoxState extends State<BsSelectBox>
                             child: InkWell(
                               onTap: () => close(),
                               child: Icon(Icons.check,
-                                  size: 20,
+                                  size: 15,
                                   color: widget.style.textColor),
                             ),
                           ),
@@ -450,7 +450,7 @@ class _BsSelectBoxState extends State<BsSelectBox>
                             child: InkWell(
                               onTap: () => clear(),
                               child: Icon(Icons.close,
-                                  size: 20,
+                                  size: 16,
                                   color: widget.style.textColor),
                             ),
                           ),
@@ -459,7 +459,7 @@ class _BsSelectBoxState extends State<BsSelectBox>
                     margin: EdgeInsets.only(right: 10.0),
                     child: Icon(
                       widget.style.Icon,
-                      size: 20,
+                      size: 16,
                       color: valid ? widget.style.textColor : Colors.red,
                     ),
                   )
