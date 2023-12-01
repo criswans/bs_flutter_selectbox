@@ -436,7 +436,7 @@ class _BsSelectBoxState extends State<BsSelectBox>
                             child: InkWell(
                               onTap: () => close(),
                               child: Icon(Icons.check,
-                                  size: widget.size.fontSize! - 10,
+                                  size: 20,
                                   color: widget.style.textColor),
                             ),
                           ),
@@ -450,7 +450,7 @@ class _BsSelectBoxState extends State<BsSelectBox>
                             child: InkWell(
                               onTap: () => clear(),
                               child: Icon(Icons.close,
-                                  size: widget.size.fontSize! - 10,
+                                  size: 20,
                                   color: widget.style.textColor),
                             ),
                           ),
