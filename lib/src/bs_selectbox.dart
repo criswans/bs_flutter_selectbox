@@ -27,6 +27,7 @@ class BsSelectBox extends StatefulWidget {
     this.validators = const [],
     this.onChange,
     this.onRemoveSelectedItem,
+    this.autoClose = true,
     this.onClear,
     this.onClose,
     this.onOpen,
@@ -83,6 +84,7 @@ class BsSelectBox extends StatefulWidget {
   final VoidCallback? onOpen;
 
   final VoidCallback? onClose;
+  final bool autoClose;
 }
 
 class _BsSelectBoxState extends State<BsSelectBox>
@@ -205,6 +207,7 @@ class _BsSelectBoxState extends State<BsSelectBox>
           updateState(() {});
         }
 
+        if(widget.autoClose) close();
         if (!widget.controller.multiple) {
           widget.controller.setSelected(option);
 
