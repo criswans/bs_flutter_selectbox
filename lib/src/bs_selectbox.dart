@@ -458,7 +458,7 @@ class _BsSelectBoxState extends State<BsSelectBox>
                   Container(
                     margin: EdgeInsets.only(right: 10.0),
                     child: Icon(
-                      widget.style.Icon,
+                      widget.style.arrowIcon,
                       size: 16,
                       color: valid ? widget.style.textColor : Colors.red,
                     ),
