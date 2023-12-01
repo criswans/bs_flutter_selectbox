@@ -266,7 +266,7 @@ class _BsSelectBoxState extends State<BsSelectBox>
 
     if (widget.onClear != null) widget.onClear!();
 
-    updateState(() => _focusNode.requestFocus());
+    //updateState(() => _focusNode.requestFocus());
   }
 
   String? _errorText;
