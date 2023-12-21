@@ -279,7 +279,7 @@ class _BsSelectBoxState extends State<BsSelectBox>
 
   @override
   Widget build(BuildContext context) {
-    if(!isFocus){
+    if(isFocus == false){
       close();
     }
     return WillPopScope(
