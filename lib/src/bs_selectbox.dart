@@ -26,6 +26,7 @@ class BsSelectBox extends StatefulWidget {
     this.disabled = false,
     this.validators = const [],
     this.onChange,
+    this.onFocus = true,
     this.onRemoveSelectedItem,
     this.autoClose = true,
     this.onClear,
@@ -58,6 +59,8 @@ class BsSelectBox extends StatefulWidget {
   final bool searchable;
 
   final bool disabled;
+
+  final bool onFocus;
 
   final BsSelectBoxController controller;
 
@@ -276,6 +279,9 @@ class _BsSelectBoxState extends State<BsSelectBox>
 
   @override
   Widget build(BuildContext context) {
+    if(!onFocus){
+      close();
+    }
     return WillPopScope(
       onWillPop: () async {
         bool returned = true;
